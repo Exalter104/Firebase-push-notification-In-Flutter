@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "441283849641",
+    "project_id": "flutter-notification-f2ba3",
+    "storage_bucket": "flutter-notification-f2ba3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441283849641:android:cda95eb0cfa8dbc5f868b8",
+        "android_client_info": {
+          "package_name": "com.exarth.push_notification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQcFm6ZBP3DhWW28EK-LEJkZtWVnS1vd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
