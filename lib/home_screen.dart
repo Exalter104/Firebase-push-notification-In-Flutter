@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(child: Text("notification Permission")),
+      body: Center(child: Text("Notification Permission")),
     );
   }
 }

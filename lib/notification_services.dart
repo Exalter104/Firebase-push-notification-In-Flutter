@@ -8,31 +8,34 @@ class NotificationServices {
   // this function you use anywhere to any application
   void requestNotificationPermission() async {
     NotificationSettings settings = await messaging.requestPermission(
-      // show the notification in device
       alert: true,
-
       announcement: true,
-      //
       badge: true,
       carPlay: true,
       criticalAlert: true,
       provisional: true,
       sound: true,
     );
+
+    if (kDebugMode) {
+      print(
+          "Requested permission. Authorization status: ${settings.authorizationStatus}");
+    }
+
     if (settings.authorizationStatus == AuthorizationStatus.authorized) {
       if (kDebugMode) {
-        print("user granted permission");
+        print("User granted permission");
       }
     } else if (settings.authorizationStatus ==
         AuthorizationStatus.provisional) {
       if (kDebugMode) {
-        print("user provisional permission");
+        print("User provisional permission");
       }
     } else {
-      AppSettings.openAppSettings();
       if (kDebugMode) {
-        print("user denied permission");
+        print("User denied permission");
       }
+      AppSettings.openAppSettings();
     }
   }
 }
