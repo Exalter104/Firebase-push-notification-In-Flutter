@@ -1,2 +1,2 @@
 # Firebase-push-notification-In-Flutter
-creatiing a firebas push notifiication
+Lets creatiing a firebas push notification in flutter for ios and android
